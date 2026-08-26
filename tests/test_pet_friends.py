@@ -32,7 +32,7 @@ def test_post_add_information_about_new_pet_with_photo(name = new_kitten_name, a
     status, result = pf.post_add_information_about_new_pet_with_photo(auth_key, name, animal_type, age, pet_photo)
     print(f"\n{animal_type} {name} добавлен!!!")
     assert status == 200
-    assert os.path.exists(pet_photo), f"Файл не найден: {pet_photo}"
+    assert os.path.exists(pet_photo), f"Файл с фото по адресу {pet_photo} не найден: "
     assert result['name'] == name
 
 def test_post_add_photo(pet_id=new_cat_id, pet_photo=new_cat_photo ):
