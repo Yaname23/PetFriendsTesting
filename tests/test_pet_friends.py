@@ -42,7 +42,7 @@ def test_post_add_photo(pet_id=new_cat_id, pet_photo=new_cat_photo ):
     status, result = pf.post_add_photo(auth_key, pet_id, pet_photo)
     print(f"\nФото добавлено!!!")
     assert status == 200
-    assert os.path.exists(pet_photo), f"Файл не найден с фото: {pet_photo}"
+    assert os.path.exists(pet_photo), f"Файл с фото не найден : {pet_photo}"
 
 def test_delete_pet_from_database(pet_id='729b086b-6f43-4620-8812-e2564fe8fd71'):
     _, auth_key = pf.get_api_key(valid_email, valid_password)

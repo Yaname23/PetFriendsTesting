@@ -1,7 +1,7 @@
 valid_email = 'yaname.test@gmail.com'
 valid_password = 'test2022'
 new_cat_name = 'Тимоша'
-new_cat_animal_type = 'cat'
+new_cat_animal_type = 'кот'
 new_cat_id = '206f9acc-8086-4c2e-b1bc-73a29e11ede1'
 new_cat_photo = 'images\cat.jpeg'
 new_cat_age = 1
